@@ -66,6 +66,8 @@ uintptr_t FindDMAAddy(HANDLE hProc, uintptr_t ptr, std::vector<unsigned int> off
 	return addr;
 }
 
+//credits to guided hacking for the code above.
+
 DWORD ProcID = GetProcId(L"Whatever it is.exe"); 
 uintptr_t moduleBase = GetModuleBaseAddress(ProcID, L"Whatever.dll"); 
 uintptr_t moduleBaseFinal = moduleBase + 0x4201024; 
