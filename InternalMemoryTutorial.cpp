@@ -44,3 +44,4 @@ int main()
 
 //note that using MessageBox() will stop the code from running until you either click ok or close the message box. 
 //Feel free to change it to std::cout once you've allocated a debug console from dll entry point.
+//this is code written in x64, to convert to 32-bit just remove the unicode pointers("L")
