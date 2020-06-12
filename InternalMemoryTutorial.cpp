@@ -42,3 +42,5 @@ int main()
 		MessageBox(NULL, L"Could not open handle to current window", L"Error", MB_OKCANCEL);
 }
 
+//note that using MessageBox() will stop the code from running until you either click ok or close the message box. 
+//Feel free to change it to std::cout once you've allocated a debug console from dll entry point.
