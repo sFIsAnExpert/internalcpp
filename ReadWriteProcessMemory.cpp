@@ -5,7 +5,7 @@
 #include <tchar.h>
 #include <vector> 
 
-DWORD GetProcId(const wchar_t* procName) 
+DWORD GetProcId(const wchar_t* procName) //for 64-bit process, remove the wide char from each line of code.
 {
 	DWORD procId = 0;
 	HANDLE hSnap = CreateToolhelp32Snapshot(TH32CS_SNAPPROCESS, 0);
